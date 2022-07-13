@@ -5,7 +5,7 @@ install:
 		--tty \
 		--volume ${PWD}:/app composer install
 
-	test:
+test:
 	@docker run --rm \
 		--interactive \
 		--tty \
