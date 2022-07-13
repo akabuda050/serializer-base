@@ -1,0 +1,40 @@
+{
+    "name": "jsonbaby/serializer-base",
+    "description": "Base interfaces for class serialization",
+    "type": "package",
+    "require": {
+        "php": "^8.0.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.8",
+        "vimeo/psalm": "5.x-dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Olexandr Dolbin",
+            "email": "olexandr.dolbin@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jsonbaby\\SerializerBase\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jsonbaby\\SerializerBase\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
